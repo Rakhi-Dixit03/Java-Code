@@ -26,7 +26,7 @@ The repository includes:
 
 1. Clone this repository to your local machine using:
    ```
-   git clone <repository-link>
+   git clone <https://github.com/Rakhi-Dixit03/Java-Code.git>
    ```
 2. Navigate through the folders to explore specific topics.
 3. Run the code examples in your Java IDE or command line.
