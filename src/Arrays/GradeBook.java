@@ -8,12 +8,11 @@ public class GradeBook {
 
    private int numOfStudents;
    private int numOfSub;
-   private static String[] stuNames;
-   private static int[][] Grades;
+   private String[] stuNames;
+   private  int[][] Grades;
    Scanner sc=new Scanner(System.in);
 
     public GradeBook(){
-
     }
 
     public GradeBook(int n,int noOfSubjects){
@@ -24,12 +23,20 @@ public class GradeBook {
 
     }
 
+
     //Method to add Students
 
     public void addStuNames() {
 
+        for (String stuName : stuNames) {
+            if (stuName != null) {
+                System.out.println("Elements already added!");
+                return;
+            }
+        }
+
         for (int i = 0; i < stuNames.length; i++) {
-            System.out.println("Enetr Student's Full Name : ");
+            System.out.println("Enter Student's Full Name : ");
             stuNames[i] = sc.nextLine();
         }
 
@@ -38,6 +45,18 @@ public class GradeBook {
     //Method to add  Grades
 
      public void  addStuGrades(){
+
+
+         for (int[] grades: Grades) {
+             for(int grade: grades){
+                 if (grade!= 0) {
+                     System.out.println("Elements already added!");
+                     return;
+                 }
+
+             }
+
+         }
 
          for(int i=1;i<=numOfStudents;i++){
              System.out.println("Enter Grades of Student  "+i);
@@ -50,7 +69,7 @@ public class GradeBook {
     }
 
 
-//Displaying Grades
+  //Displaying Grades
 
    public void displayGrades(){
         if(Grades==null){
