@@ -105,14 +105,14 @@ public class GradeBook {
 
        for(int j=0;j<numOfSub;j++){
            int sum=0;
-           int avgGradeOfSub=0;
+
 
            for(int i=0;i<numOfStudents;i++){
 
               sum+=Grades[i][j];
 
            }
-           avgGradeOfSub=sum/numOfStudents;
+           int avgGradeOfSub=sum/numOfStudents;
            System.out.println("Average Grade of Subject "+(j+1)+" is : "+avgGradeOfSub);
        }
 
