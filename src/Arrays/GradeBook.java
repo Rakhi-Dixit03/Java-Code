@@ -102,12 +102,10 @@ public class GradeBook {
           System.out.println("There is no relevant data available.");
           return;
       }
-      int avgGradeOfSub=0;
-      int sum=0;
 
        for(int j=0;j<numOfSub;j++){
-           sum=0;
-           avgGradeOfSub=0;
+           int sum=0;
+           int avgGradeOfSub=0;
 
            for(int i=0;i<numOfStudents;i++){
 
